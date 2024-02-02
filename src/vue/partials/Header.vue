@@ -9,19 +9,25 @@
         <!-- Content -->
         <div class="container-xxl">
             <div class="content-wrapper">
-                <!-- Logo -->
-                <ImageView :src="props.headerData['imageUrl']"
-                           :alt="'logo'"
-                           class="img-logo"/>
-
                 <!-- Texts -->
-                <h1 class="heading">{{ props.headerData['title'] }}</h1>
-                <h4 class="subheading">{{ props.headerData['subtitle'] }}</h4>
+                <div class="landing-text">
+                    <h1 class="heading">{{ props.headerData['title'] }}</h1>
+                    <h4 class="subheading">{{ props.headerData['subtitle'] }}</h4>
 
-                <!-- Button -->
-                <XLButton :icon="props.headerData['button'].icon"
-                          :label="props.headerData['button'].label"
-                          @click="_onButtonClick"/>
+                    <!-- Button -->
+                    <XLButton :icon="props.headerData['button'].icon"
+                            :label="props.headerData['button'].label"
+                            @click="_onButtonClick"/>
+                </div>
+
+                <!-- Logo -->
+                <div class="alex-illustration">
+                    <ImageView :src="props.headerData['imageUrl']"
+                               :alt="'logo'"
+                               class="img-logo"/>
+                </div>
+
+                
             </div>
         </div>
     </header>
@@ -80,9 +86,11 @@ const _onButtonClick = () => {
         margin-top:var(--content-margin-top);
     }
 
-    .img-logo {
-        height: var(--logo-proportion);
-        width: var(--logo-proportion);
+    .alex-illustration {
+        position: absolute;
+        bottom: -5px;
+        right: 0px;
+        width: 50%;
     }
 
     h1.heading {

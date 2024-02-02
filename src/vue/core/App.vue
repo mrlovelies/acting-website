@@ -56,7 +56,7 @@ const _startPreloading = async () => {
     clearInterval(intervalId)
     if(_isPreloaderEnabled.value) {
         feedbackView.value.setLoaderListeners(_onPreloaderShown, _onPreloadCompleted)
-        feedbackView.value.setLoader("images/logo/agency-logo-small.png")
+        feedbackView.value.setLoader("images/alex-illustration-whiteOutline-D.png")
     }
     else {
         await _onPreloaderShown()

@@ -5,13 +5,13 @@
 
     "navbar": {
         "brand": "<span class='text-primary'>Foxy</span> Agency",
-        "logo": "images/logo/agency-logo-small.png"
+        "logo": "images/alex-illustration-whiteOutline-D.png"
     },
 
     "header": {
         "title": "Foxy Agency Template",
         "subtitle": "Made by Ryan Balieiro with Vue3 and Bootstrap 5.0",
-        "imageUrl": "images/logo/agency-logo.png",
+        "imageUrl": "images/alex-illustration-whiteOutline-D.png",
         "button": {
             "label": "Find Out More",
             "icon": "fa fa-search",
